@@ -1,0 +1,88 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-pop);
+  transition: 0.4s;
+  padding: 0.4em;
+}
+
+button {
+  color: var(--color-background);
+  background-color: var(--color-pop);
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.banner {
+  background-color: var(--aqua-gray);
+  box-shadow: inset 0 0 0 2000px rgba(111, 116, 121, 0.3);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.banner-container {
+  margin: 0 auto;
+  padding: 160px 50px 100px;
+  width: 100%;
+}
+
+footer {
+  padding: 20px 15%;
+  background-color: var(--color-tertiary);
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h1,
+ul {
+  color: var(--color-highlight);
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: var(--color-pop);
+    color: var(--color-highlight);
+    cursor: pointer;
+    padding: 0.4em;
+    border-radius: 3px;
+    transition: 0.8s;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: var(--color-highlight);
+    color: var(--color-pop);
+    transition: 0.8s;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    height: 100%;
+  }
+
+  #app {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "techrent",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "test:unit": "vitest --environment jsdom",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@vue-stripe/vue-stripe": "^4.4.4",
+    "@vuelidate/core": "^2.0.0",
+    "@vuelidate/validators": "^2.0.0",
+    "axios": "^1.0.0",
+    "express": "^4.18.2",
+    "firebase": "^9.10.0",
+    "serve-static": "^1.15.0",
+    "vue": "^3.2.38",
+    "vue-router": "^4.1.5",
+    "vuejs-jwt": "^1.1.0",
+    "vuelidate": "^0.7.7",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^3.1.2",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/test-utils": "^2.0.2",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.3.0",
+    "jsdom": "^20.0.0",
+    "prettier": "^2.7.1",
+    "vite": "^3.2.5",
+    "vitest": "^0.23.0"
+  }
+}
